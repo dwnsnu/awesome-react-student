@@ -1,14 +1,13 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Todos from "./containers/Todos";
-import AddTodo from "./containers/AddTodo";
+import TodoListContainer from "./containers/TodoListContainer";
+import AddTodoContainer from "./containers/AddTodoContainer";
 function App() {
   return (
     <div className="App">
-      abc
-      <AddTodo />
-      <Todos />
+      <AddTodoContainer />
+      <TodoListContainer />
     </div>
   );
 }

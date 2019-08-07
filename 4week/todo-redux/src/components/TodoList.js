@@ -1,5 +1,5 @@
 import React from "react";
-import Todo from "./Todo";
+import TodoContainer from "../container/TodoContainer";
 
 export default function TodoList({ todos }) {
   return (
@@ -8,7 +8,9 @@ export default function TodoList({ todos }) {
       {/* {todos} */}
       <ul>
         {todos.map((todo, index) => (
-          <Todo key={index} {...todo} />
+          <div style={{ border: "solid" }}>
+            <Todo key={index} {...todo} />
+          </div>
         ))}
       </ul>
     </div>
