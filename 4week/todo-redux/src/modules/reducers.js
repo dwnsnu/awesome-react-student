@@ -1,7 +1,8 @@
 import { ADD_TODO } from "./actions";
 
 const initialState = {
-  todos: [{ text: "sleep" }, { text: "eat" }]
+  todos: [{ text: "sleep" }, { text: "eat" }],
+  // temp: [1,2]
 };
 
 function todoApp(state = initialState, action) {

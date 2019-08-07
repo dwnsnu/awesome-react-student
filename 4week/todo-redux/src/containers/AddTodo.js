@@ -6,9 +6,11 @@ class AddTodo extends Component {
   state = {
     todo: ""
   };
+
   handleChange = e => {
     this.setState({ todo: e.target.value });
   };
+
   handleSubmit = e => {
     e.preventDefault();
     const text = this.state.todo;
@@ -17,7 +19,7 @@ class AddTodo extends Component {
   };
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -32,6 +34,7 @@ class AddTodo extends Component {
     );
   }
 }
+
 export default connect(
   state => {
     console.log(state);
