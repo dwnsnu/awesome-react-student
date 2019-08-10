@@ -2,11 +2,12 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import TodoListContainer from "./containers/TodoListContainer";
-import AddTodoContainer from "./containers/AddTodoContainer";
+import AddTodo from "./containers/AddTodo";
+
 function App() {
   return (
     <div className="App">
-      <AddTodoContainer />
+      <AddTodo />
       <TodoListContainer />
     </div>
   );
